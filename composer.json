@@ -1,6 +1,6 @@
 {
-    "name": "dakota/featured-images",
-    "description": "Featured images plugin for Croogo",
+    "name": "dakota/featured-image",
+    "description": "Featured image plugin for Croogo",
     "type": "cakephp-plugin",
     "require": {
         "php": ">=5.5.9",
