@@ -1,0 +1,14 @@
+{
+    "name": "Featured Images",
+    "description": "Plugin to add a featured image to pages",
+    "author": "Walther Lalk",
+    "authorEmail": "emailme@waltherlalk.com",
+    "authorUrl": "http://waltherlalk.com",
+    "dependencies": {
+        "plugins": [
+            "Croogo/Nodes",
+            "Croogo/FileManager",
+            "Croogo/Meta"
+        ]
+    }
+}
