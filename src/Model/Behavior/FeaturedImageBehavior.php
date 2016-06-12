@@ -45,12 +45,14 @@ class FeaturedImageBehavior extends Behavior
             unset($entity->featured_image_id);
         }
 
-        $entity->meta = Hash::remove($entity->meta, '{n}[key=featured_image]');
+        $entity->meta = collection($entity->meta)->reject(function ($item) {
+            return $item->key === 'featured_image';
+        })->toList();
     }
 
-    public function prepareFeaturedImage(Event $event, \ArrayObject $data)
+    public function prepareFeaturedImage(Event $event, $data)
     {
-        if (!isset($data['featured_image_id'])) {
+        if (empty($data['featured_image_id'])) {
             return;
         }
 
