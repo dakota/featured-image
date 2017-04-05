@@ -29,7 +29,6 @@ $(function () {
       var imageId = $this.data('chooserId');
       var thumbnail = $this.find('.thumbnail').attr('src');
 
-      console.log(imageId);
       $featuredImageId.val(imageId);
       $featuredImageThumbnail.attr('src', thumbnail);
       $selectedImage.addClass('show');
