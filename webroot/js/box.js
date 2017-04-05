@@ -32,8 +32,8 @@ $(function () {
       console.log(imageId);
       $featuredImageId.val(imageId);
       $featuredImageThumbnail.attr('src', thumbnail);
-      $selectedImage.addClass('in');
-      $selectImage.removeClass('in');
+      $selectedImage.addClass('show');
+      $selectImage.removeClass('show');
 
       $imageChooser.modal('hide');
     });
