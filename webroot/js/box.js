@@ -29,11 +29,10 @@ $(function () {
       var imageId = $this.data('chooserId');
       var thumbnail = $this.find('.thumbnail').attr('src');
 
-      console.log(imageId);
       $featuredImageId.val(imageId);
       $featuredImageThumbnail.attr('src', thumbnail);
-      $selectedImage.addClass('in');
-      $selectImage.removeClass('in');
+      $selectedImage.addClass('show');
+      $selectImage.removeClass('show');
 
       $imageChooser.modal('hide');
     });
