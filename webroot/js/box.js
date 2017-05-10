@@ -8,8 +8,8 @@ $(function () {
 
   $('.remove-image').on('click', function (e) {
     e.preventDefault();
-    $selectedImage.removeClass('in');
-    $selectImage.addClass('in');
+    $selectedImage.removeClass('show');
+    $selectImage.addClass('show');
     $featuredImageId.val('');
   });
 
