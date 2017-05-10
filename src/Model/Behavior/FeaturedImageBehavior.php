@@ -52,7 +52,7 @@ class FeaturedImageBehavior extends Behavior
 
     public function prepareFeaturedImage(Event $event, $data)
     {
-        if (empty($data['featured_image_id'])) {
+        if (!isset($data['featured_image_id'])) {
             return;
         }
 
