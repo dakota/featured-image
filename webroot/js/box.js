@@ -27,7 +27,7 @@ $(function () {
     .on('click', '.item-choose', function (e) {
       var $this = $(this);
       var imageId = $this.data('chooserId');
-      var thumbnail = $this.find('.thumbnail').attr('src');
+      var thumbnail = $this.find('img').attr('src');
 
       $featuredImageId.val(imageId);
       $featuredImageThumbnail.attr('src', thumbnail);

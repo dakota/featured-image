@@ -16,7 +16,7 @@ endif;
 $selectedBlock .= $this->Html->link(__d('croogo', 'Remove featured image'), '#', [
     'class' => 'btn btn-secondary remove-image'
 ]);
-$out .= $this->Html->div('text-xs-center selected-image collapse ' . (isset($entity->featured_image) ? 'show' : ''), $selectedBlock);
+$out .= $this->Html->div('text-center selected-image collapse ' . (isset($entity->featured_image) ? 'show' : ''), $selectedBlock);
 
 $notSelectedBlock = $this->Html->link(__d('croogo', 'Select featured image'), [
     'plugin' => 'Croogo/FileManager',
@@ -29,7 +29,7 @@ $notSelectedBlock = $this->Html->link(__d('croogo', 'Select featured image'), [
 ], [
     'class' => 'btn btn-secondary choose-image'
 ]);
-$out .= $this->Html->div('text-xs-center select-image collapse ' . (isset($entity->featured_image) ? '' : 'show'), $notSelectedBlock);
+$out .= $this->Html->div('text-center select-image collapse ' . (isset($entity->featured_image) ? '' : 'show'), $notSelectedBlock);
 
 $out .= $this->Form->input(
     'featured_image_meta_id',
