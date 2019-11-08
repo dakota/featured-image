@@ -20,7 +20,7 @@ class FeaturedImageComponent extends Component
     public function startup()
     {
         $controller = $this->_registry->getController();
-        if ($controller->request->param('prefix') === 'admin') {
+        if ($controller->request->getParam('prefix') === 'admin') {
             $this->_adminTabs();
         }
     }
@@ -45,7 +45,7 @@ class FeaturedImageComponent extends Component
 
         $title = __d('croogo', 'Featured image');
         $element = 'FeaturedImage.admin/featured_image';
-        $controllerName = $this->request->param('controller');
+        $controllerName = $this->request->getParam('controller');
         Croogo::hookAdminBox("Admin/$controllerName/add", $title, $element);
         Croogo::hookAdminBox("Admin/$controllerName/edit", $title, $element);
     }
